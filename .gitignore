@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Environment / local configuration
+.env
+.env.*
+!.env.example
+
+# IDE and OS metadata
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Large third-party dlib models (download with scripts/download_models.py)
+*.dat
+*.dat.bz2
+haarcascade_*.xml
+
+# Runtime database and trained encodings
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+*.pickle
+park_guard.db
+encodings.pickle
+labels.pickle
+trainer.yml
+
+# Private biometric dataset and event snapshots
+faces/*
+!faces/README.md
+dataset_faces/
+capture_logs/*
+!capture_logs/.gitkeep
+
+# ESP32 local secrets
+firmware/**/secrets.h
+
+# Logs and temporary files
+*.log
+*.tmp
